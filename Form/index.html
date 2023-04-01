@@ -35,33 +35,34 @@
 </head>
 <body>
     
-    <form class="form" action="/create"  METHOD=POST>
+    <form class="form" action="/show"  METHOD=POST>
+        <input type="submit" value="Show Records" name="Submit"/>
 
         <fieldset>
             <legend>BASIC INFO</legend>
                 <div class="row pool">
                     <div class="col-sm-6">
                         <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required>
                     </div>
                     <div class="col-sm-6">
                         <label for="surname">Surname</label>
-                        <input type="text" class="form-control" id="surname" name="surname" placeholder="Enter surname">
+                        <input type="text" class="form-control" id="surname" name="surname" placeholder="Enter surname" required>
                     </div>
                 </div>
                     <div class="pool">
                         <label for="date">Date of birth</label>
-                        <input type="date" class="form-control" id="date" name="date" placeholder="Enter date">
+                        <input type="date" class="form-control" id="date" name="date" placeholder="Enter date" required>
                     </div>
 
                 <div class="row pool">
                     <div class="col-sm-6">
                         <label for="city">City</label>
-                        <input type="text" class="form-control" id="city" name="city" placeholder="Enter city">
+                        <input type="text" class="form-control" id="city" name="city" placeholder="Enter city" required>
                     </div>
                     <div class="col-sm-6">
                         <label for="country">Country</label>
-                        <select id="country-selector" class="form-control"></select>
+                        <select id="country-selector" class="form-control" required></select>
                     </div>
         </fieldset>
 
@@ -79,7 +80,7 @@
                     </div>
                     <div class="col-sm-6">
                         <label for="field">Field</label>
-                        <input type="text" class="form-control" id="field" name="field" placeholder="Enter field">
+                        <input type="text" class="form-control" id="field" name="field" placeholder="Enter field" required>
                     </div>
                 </div>
         </fieldset>
@@ -89,11 +90,11 @@
                 <div class="row">
                     <div class="col-sm-6" >
                         <label for="job">Job</label>
-                        <input type="text" class="form-control" id="job" name="job" placeholder="Enter job">
+                        <input type="text" class="form-control" id="job" name="job" placeholder="Enter job" required>
                     </div>
                     <div class="col-sm-6">
                         <label for="yearsjob">Years</label>
-                        <input type="text" class="form-control" id="yearsjob" name="yearsjob" placeholder="Enter years">
+                        <input type="text" class="form-control" id="yearsjob" name="yearsjob" placeholder="Enter years" required>
                     </div>
                 </div>
         </fieldset>
@@ -103,11 +104,11 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
                     </div>
                     <div class="col-sm-6 form-outline">
                         <label for="phone-number">Phone number</label>
-                        <input type="tel" class="form-control phone" id="phone-number" placeholder="Phone Number">
+                        <input type="tel" class="form-control phone" id="phone-number" placeholder="Phone Number" required>
                     </div>
                 </div>
         </fieldset>
