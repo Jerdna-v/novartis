@@ -1,15 +1,14 @@
-$(document).ready(function() {
-  $("#phone-number").intlTelInput({
-    preferredCountries: ['us', 'gb', 'jp', 'cn'],
-    defaultCountry: 'us'
-  });
-});
-
-$(document).ready(function() {
-  var countryList = window.intlTelInputGlobals.getCountryData();
-  for (var i = 0; i < countryList.length; i++) {
-    var country = countryList[i];
-    $('#country-selector').append('<option>' + country.name + '</option>');
-  }
-});
-
+function handleData()
+{
+    var form_data = new FormData(document.querySelector("form"));
+    
+    if(!form_data.has("langs[]"))
+    {
+        document.getElementById("chk_option_error").style.visibility = "visible";
+    }
+    else
+    {
+        document.getElementById("chk_option_error").style.visibility = "hidden";
+    }
+    return false;
+}
