@@ -1,3 +1,3 @@
-# case-solving Business-Hive 2023 Challenge, Novartis
+# case-solving Business-Hive 2023 Challenge, company: Novartis
 
-Faced with lack of workforce, we need to improve advertisements of the company, get inovative ways and strategies for marketing and recruitment strategy. 
+Faced with lack of workforce, we need to improve advertisements of the company, get innovative ways and strategies for marketing and recruitment.
