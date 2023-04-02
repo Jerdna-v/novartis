@@ -102,19 +102,19 @@
             <legend>SKILLS</legend>
                 <div class="row">
                     <div class="col-sm-6">
-                        <input type="checkbox" id="fastlearner" name="langs[]" value="Fastlearner">
+                        <input onchange="changeCheckboxValue(this);" type="checkbox" id="fastlearner" name="skills[]" value="unchecked">
                     <label for="fastlearner">Fast Learner</label>
                     </div>
                     <div class="col-sm-6">
-                        <input type="checkbox" id="motivated" name="langs[]" value="Motivated">
+                        <input onchange="changeCheckboxValue(this);" type="checkbox" id="motivated" name="skills[]" value="unchecked">
                     <label for="motivated">Motivated</label>
                     </div>
                     <div class="col-sm-6">
-                        <input type="checkbox" id="selfinitiative" name="langs[]" value="Selfinitiative">
+                        <input onchange="changeCheckboxValue(this);" type="checkbox" id="selfinitiative" name="skills[]" value="unchecked">
                     <label for="selfinitiative">Self-initiative</label>
                     </div>
                     <div class="col-sm-6">
-                        <input type="checkbox" id="shiftexperience" name="langs[]" value="Shiftexperience">
+                        <input onchange="changeCheckboxValue(this);" type="checkbox" id="shiftexperience" name="skills[]" value="unchecked">
                         <label for="shiftexperience">Shift experience</label>
                     </div>
                     <div class="col-sm-12">
@@ -127,16 +127,15 @@
             <legend>LANGUAGE</legend>
             <div class="form-group row">
                         <div class="col-sm-3">
-                            <div id="chk_option_error"></div>
-                            <input type="checkbox" name="langs[]" value="english" id="english"> 
+                            <input onchange="changeCheckboxValue(this);" type="checkbox" name="languages" value="unchecked" id="english"> 
                             <label for="english">English</label>
                         </div>
                         <div class="col-sm-3">
-                            <input type="checkbox" name="langs[]" value="slovenian" id="slovenian"> 
+                            <input onchange="changeCheckboxValue(this);" type="checkbox" name="languages[]" value="unchecked" id="slovenian"> 
                             <label for="slovenian">Slovenian</label>
                         </div>
                         <div class="col-sm-3">
-                            <input type="checkbox" name="langs[]" value="other" id="other"> 
+                            <input onchange="changeCheckboxValue(this);" type="checkbox" name="languages[]" value="unchecked" id="other"> 
                             <label for="other">Other</label>
                         </div>
               </div>
