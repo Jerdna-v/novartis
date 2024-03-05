@@ -1,0 +1,149 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="form.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-i18next/1.2.1/jquery-i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+
+    
+
+    
+</head>
+<body>
+    
+    <form onsubmit="handleData()" class="form" action="/create"  METHOD="POST">
+        <fieldset>
+            <legend>BASIC INFO</legend>
+                <div class="row pool">
+                    <div class="col-sm-6">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter name" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="surname">Surname</label>
+                        <input type="text" class="form-control" id="surname" name="surname" placeholder="Enter surname" required>
+                    </div>
+                </div>
+                    <div class="pool">
+                        <label for="date">Date of birth</label>
+                        <input type="date" class="form-control" id="date" name="date" placeholder="Enter date" required>
+                    </div>
+
+                <div class="row pool">
+                    <div class="col-sm-6">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="city" name="city" placeholder="Enter city" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" class="form-control" name="country" required>
+                    </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>EDUCATION</legend>
+                <div class="row form-group-control">
+                    <div class="col-sm-6">
+                        <label for="degree">Select degree</label>
+                        <select class="form-control" id="degree" name="degree">
+                        <option value="SCn">Secondary School</option>
+                        <option value="BSc">Bachelor's Degree</option>
+                        <option value="MSc">Master's Degree</option>
+                        <option value="PhD">Doctorate's Degreee</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="field">Field</label>
+                        <input type="text" class="form-control" id="field" name="field" placeholder="Enter field" required>
+                    </div>
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>EXPERIENCE</legend>
+                <div class="row">
+                    <div class="col-sm-6" >
+                        <label for="job">Job</label>
+                        <input type="text" class="form-control" id="job" name="job" placeholder="Enter job" required>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="yearsjob">Years</label>
+                        <input type="text" class="form-control" id="yearsjob" name="yearsjob" placeholder="Enter years" required>
+                    </div>
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>CONTACT</legend>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="col-sm-6 form-outline">
+                        <label for="phone">Phone number</label>
+                        <input type="text" class="form-control phone" id="phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+                </div>
+        </fieldset>
+
+    
+
+        <fieldset>
+            <legend>SKILLS</legend>
+                <div class="row">
+                    <div class="col-sm-6"><!-- onchange="changeCheckboxValue(this);"-->
+                        <input class="skillscheck" type="checkbox" id="fastlearner" name="fastlearner" value="true">
+                    <label for="fastlearner">Fast Learner</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="skillscheck" type="checkbox" id="motivated" name="motivated" value="true">
+                    <label for="motivated">Motivated</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="skillscheck" type="checkbox" id="selfinitiative" name="selfinitiative" value="true">
+                    <label for="selfinitiative">Self-initiative</label>
+                    </div>
+                    <div class="col-sm-6">
+                        <input class="skillscheck" type="checkbox" id="shiftexperience" name="shiftexperience" value="true">
+                        <label for="shiftexperience">Shift experience</label>
+                    </div>
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" id="otherskills" name="otherskills" placeholder="Enter other skills (seperated by comma)">
+                    </div>
+                </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>LANGUAGE</legend>
+            <div class="form-group row">
+                        <div class="col-sm-3">
+                            <input type="checkbox" name="english" value="true" id="english"> 
+                            <label for="english">English</label>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="checkbox" name="slovenian" value="true" id="slovenian"> 
+                            <label for="slovenian">Slovenian</label>
+                        </div>
+                        <div class="col-sm-3">
+                            <input type="checkbox" name="other" value="true" id="other"> 
+                            <label for="other">Other</label>
+                        </div>
+              </div>
+        </fieldset>
+
+        <button type="submit" value="Add" name="Submit" class="btn btn-primary">Submit</button>
+
+    </form>
+      
+</body>
+</html>

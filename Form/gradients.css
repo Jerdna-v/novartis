@@ -1,0 +1,163 @@
+/*#97c503 #97c503 background*/
+/*#1d3b00 #1d3b00  */
+a{
+	text-decoration: none;
+	color: #92c000;
+}
+body{
+	margin-top: 10%;
+		/*text-align: center;
+	display: flex;
+ 	justify-content: center;
+  	align-items: center;*/
+	background: #92c000;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+}
+
+.snake_title{
+	animation-name: titlea;
+	animation-iteration-count: 1;
+	animation-duration: 6s;
+	animation-delay: 0s;
+
+	width: 9%;
+	height: 6em;
+	display: inline-block;
+	margin-left: 0.5em;
+}
+
+.snake_title_letter{
+	font-size: 6vw;
+	font-family: nokia;
+	display: grid;
+	margin-top: 15%;
+	justify-content: center;
+	animation-name: size;
+	animation-iteration-count: 1;
+	animation-duration: 7s;
+	animation-delay: 0s;
+
+}
+#snake_tail{
+	border-radius: 30% 0% 0% 30%;
+}
+#snake_head{
+	border-radius: 0% 30% 30% 0%;
+}
+#snake_eyes{
+	margin-left: 70%;
+}
+#snake_eye_up{
+	animation-name: titleb;
+	animation-iteration-count: 1;
+	animation-duration: 5.5s;
+	animation-delay: 0s;
+	width: 35%;
+	height: 0.3em;
+	margin-top: 0.6em;
+
+}
+#snake_eye_down{
+	animation-name: titleb;
+	animation-iteration-count: 1;
+	animation-duration: 5.5s;
+	animation-delay: 0s;
+	width: 35%;
+	height: 0.3em;
+	margin-top: 4em;
+}
+.snake_title_container{
+	justify-content: center;
+	flex-wrap: wrap;
+	display: flex;
+	position: relative;
+	width: 75%;
+}
+.snake_title_container::after{
+	animation-name: titleb;
+	animation-iteration-count: 1;
+	animation-duration: 5.5s;
+	animation-delay: 0s;
+	content: '';
+	margin-top: 3.4em;
+	position: relative;
+	width: 2%;
+	height: 0.5em;
+}
+.container{
+	justify-content: center;
+/*	margin-top: 10%;*/
+	flex-wrap: wrap;
+	display: flex;
+	animation-name: snake;
+	animation-iteration-count: 1;
+	animation-duration: 4s;
+	width: 100%;
+	height: fit-content;
+	position: absolute;
+/*	padding-bottom: 50%;*/
+}
+
+@keyframes snake{
+	from{
+
+		left: -100%;
+	}
+	to{
+		left: 0%;
+	}
+}
+@keyframes titlea{
+	0%, 75%{
+		border: 0.5em dashed #1d3b00 ;
+
+	}
+	100%{
+		background-color: transparent;
+		border: none;
+	}
+}
+@keyframes titleb{
+	0%, 75%{
+		background-color: #1d3b00;
+	}
+	100%{
+		background-color: transparent;
+		border: none;
+	}
+}
+
+@keyframes size{
+	0%,75%{
+		font-size: 3vw;
+	}
+	100%{
+		font-size: 6vw;
+	}
+}
+.retro_menu{
+	width: 100%;
+	padding-top: 15%;
+}
+.retro_button{
+	width: 100%;
+	height: 7.5em;
+	background: black;
+		    align-items:center;
+	display: grid;
+	margin-bottom: 5%;
+	justify-content: center;
+/*	        margin: auto;*/
+
+}
+.retro_button:hover, a:hover{
+	background-color: #1d3b00;
+/*	color: #1d3b00;*/
+}
+.center_button_text{
+	font-family: nokia;
+	font-size: 2.5em;
+	color: #97c503;
+}
